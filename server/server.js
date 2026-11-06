@@ -1,3 +1,7 @@
+import dns from "node:dns";
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -14,7 +18,7 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import connectDB from "./config/db.js";
 
 dotenv.config();
-console.log("MONGO_URI:", process.env.MONGO_URI);
+console.log(process.env.MONGO_URI);
 connectDB();
 
 const app = express();

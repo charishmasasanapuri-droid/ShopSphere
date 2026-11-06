@@ -28,7 +28,7 @@ function Checkout() {
       }
 
       await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://shopsphere-l2ul.onrender.com/api/orders",
         {
           shippingAddress: address,
           phone,
@@ -68,7 +68,7 @@ function Checkout() {
             </h2>
 
             <img
-              src={`http://localhost:5000${buyNowProduct.image}`}
+              src={`https://shopsphere-l2ul.onrender.com${buyNowProduct.image}`}
               alt={buyNowProduct.name}
               className="w-40 h-40 object-contain mx-auto"
             />

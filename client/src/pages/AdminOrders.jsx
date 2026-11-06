@@ -14,7 +14,7 @@ function AdminOrders() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/orders/all",
+        "https://shopsphere-l2ul.onrender.com/api/orders/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ function AdminOrders() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/orders/${orderId}`,
+        `https://shopsphere-l2ul.onrender.com/api/orders/${orderId}`,
         { status },
         {
           headers: {

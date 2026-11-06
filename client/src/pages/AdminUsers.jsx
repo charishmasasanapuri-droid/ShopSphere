@@ -10,7 +10,7 @@ function AdminUsers() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/users",
+        "https://shopsphere-l2ul.onrender.com/api/users",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ function AdminUsers() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/users/${id}`,
+        `https://shopsphere-l2ul.onrender.com/api/users/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

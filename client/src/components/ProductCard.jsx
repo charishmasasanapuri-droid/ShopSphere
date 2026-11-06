@@ -53,7 +53,7 @@ function ProductCard({
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/cart/add",
+        "https://shopsphere-l2ul.onrender.com/api/cart/add",
         {
           productId: id,
           title: name,
@@ -118,7 +118,7 @@ function ProductCard({
       {/* Product Image */}
       <Link to={`/products/${id}`}>
         <img
-          src={`http://localhost:5000${image}`}
+          src={`https://shopsphere-l2ul.onrender.com${image}`}
           alt={name}
           className="w-40 h-40 object-contain mx-auto cursor-pointer"
           onError={(e) => {

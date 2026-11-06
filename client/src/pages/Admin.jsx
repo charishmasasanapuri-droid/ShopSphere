@@ -35,7 +35,7 @@ const fetchDashboardStats = async () => {
     const token = localStorage.getItem("token");
 
     const response = await axios.get(
-  "http://localhost:5000/api/admin/dashboard",
+  "https://shopsphere-l2ul.onrender.com/api/admin/dashboard",
   {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -53,7 +53,7 @@ const fetchDashboardStats = async () => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/products"
+        "https://shopsphere-l2ul.onrender.com/api/products"
       );
       setProducts(response.data);
     } catch (error) {
@@ -65,7 +65,7 @@ const fetchDashboardStats = async () => {
   const handleAddProduct = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/products",
+        "https://shopsphere-l2ul.onrender.com/api/products",
         newProduct
       );
 
@@ -103,7 +103,7 @@ const fetchDashboardStats = async () => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/upload",
+      "https://shopsphere-l2ul.onrender.com/api/upload",
       formData,
       {
         headers: {
@@ -147,7 +147,7 @@ const fetchDashboardStats = async () => {
 const handleUpdateProduct = async () => {
   try {
     await axios.put(
-      `http://localhost:5000/api/products/${editingId}`,
+      `https://shopsphere-l2ul.onrender.com/api/products/${editingId}`,
       newProduct
     );
 
@@ -185,7 +185,7 @@ const handleUpdateProduct = async () => {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`
+        `https://shopsphere-l2ul.onrender.com/api/products/${id}`
       );
 
       fetchProducts();
@@ -336,7 +336,7 @@ const handleUpdateProduct = async () => {
 />
           {newProduct.image && (
   <img
-    src={`http://localhost:5000${newProduct.image}`}
+    src={`https://shopsphere-l2ul.onrender.com${newProduct.image}`}
     alt="Preview"
     className="w-24 h-24 object-cover mt-3 rounded"
   />
@@ -387,7 +387,7 @@ const handleUpdateProduct = async () => {
 
                 <td className="border p-3">
                  <img
-  src={`http://localhost:5000${product.image}`}
+  src={`https://shopsphere-l2ul.onrender.com${product.image}`}
   alt={product.name}
   className="w-16 h-16 object-cover mx-auto rounded"
 />

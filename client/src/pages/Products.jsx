@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
-import Navbar from "../components/Navbar";
 
 function Products() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,7 +11,9 @@ function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/api/products");
+        const response = await axios.get(
+  "https://shopsphere-l2ul.onrender.com/api/products"
+);
 
         setProducts(response.data);
         console.log("Products:", response.data);

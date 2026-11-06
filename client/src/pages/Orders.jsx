@@ -11,7 +11,7 @@ function Orders() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:5000/api/orders",
+          "https://shopsphere-l2ul.onrender.com/api/orders",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -289,7 +289,7 @@ y += 10;
                     className="flex items-center gap-4 border-b py-2"
                   >
                     <img
-                      src={`http://localhost:5000${product.image}`}
+                      src={`https://shopsphere-l2ul.onrender.com${product.image}`}
                       alt={product.title}
                       className="w-20 h-20 object-contain rounded-lg border bg-white p-1"
                       onError={(e) => {

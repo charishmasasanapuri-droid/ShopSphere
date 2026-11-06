@@ -24,7 +24,7 @@ function ProductDetails() {
   const fetchProduct = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/${id}`
+        `https://shopsphere-l2ul.onrender.com/api/products/${id}`
       );
 
       setProduct(response.data.product);
@@ -84,7 +84,7 @@ const handleReviewSubmit = async () => {
 
   try {
     const response = await axios.post(
-      `http://localhost:5000/api/products/${id}/review`,
+      `https://shopsphere-l2ul.onrender.com/api/products/${id}/review`,
       {
         user,
         rating,
@@ -124,7 +124,7 @@ const handleReviewSubmit = async () => {
 
       <div className="grid md:grid-cols-2 gap-10 mt-8">
         <img
-          src={`http://localhost:5000${product.image}`}
+          src={`https://shopsphere-l2ul.onrender.com${product.image}`}
           alt={product.name}
           className="w-full h-96 object-contain"
         />

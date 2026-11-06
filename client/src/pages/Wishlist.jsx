@@ -32,7 +32,7 @@ function Wishlist() {
               className="bg-white rounded-xl shadow-md p-5 border text-center"
             >
               <img
-                src={`http://localhost:5000${item.image}`}
+                src={`https://shopsphere-l2ul.onrender.com${item.image}`}
                 alt={item.name}
                 className="w-40 h-40 object-contain mx-auto"
               />

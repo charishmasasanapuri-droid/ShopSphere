@@ -11,7 +11,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/cart",
+        "https://shopsphere-l2ul.onrender.com/api/cart",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ const handleRemove = async (id) => {
   try {
     const token = localStorage.getItem("token");
 
-    await axios.delete(`http://localhost:5000/api/cart/${id}`, {
+    await axios.delete(`https://shopsphere-l2ul.onrender.com/api/cart/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -75,7 +75,7 @@ const totalPrice = dbCartItems.reduce(
   className="border rounded-lg p-5 shadow"
 >
   <img
-    src={`http://localhost:5000${item.image}`}
+    src={`https://shopsphere-l2ul.onrender.com${item.image}`}
     alt={item.title}
     className="w-32 h-32 object-cover mx-auto"
     onError={(e) => {

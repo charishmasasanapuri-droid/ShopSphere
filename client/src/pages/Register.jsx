@@ -13,7 +13,7 @@ function Register() {
   const handleRegister = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://shopsphere-l2ul.onrender.com/api/auth/register",
         {
           name,
           email,
