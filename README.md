@@ -150,18 +150,6 @@ Open the local frontend URL displayed in your terminal.
 
 The main objective of ShopSphere is to develop a user-friendly and responsive online shopping platform that provides essential e-commerce functionality, secure authentication, product management, and order processing.
 
-## 👩‍💻 Author
-
-**Charishma Sasanapuri**
-
----
-
-GitHub: https://github.com/charishmasasanapuri-droid
-
-## 📄 License
-
-This project was developed for educational and learning purposes.
-
 ---
 
 ## 📸 Pages Description
@@ -189,3 +177,15 @@ This project was developed for educational and learning purposes.
 
 ### 8. Order Management
 ![Order Management](08-order-management.png)
+
+## 👩‍💻 Author
+
+**Charishma Sasanapuri**
+
+---
+
+GitHub: https://github.com/charishmasasanapuri-droid
+
+## 📄 License
+
+This project was developed for educational and learning purposes.
