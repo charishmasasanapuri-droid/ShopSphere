@@ -1,138 +1,161 @@
-# ShopSphere - Full Stack E-Commerce Website
+# 🛒 ShopSphere – Full Stack E-Commerce Website
 
-## Project Overview
+A full-stack e-commerce web application developed using the **MERN Stack (MongoDB, Express.js, React.js, and Node.js)**.
 
-ShopSphere is a full-stack e-commerce web application developed using the MERN Stack (MongoDB, Express.js, React.js, and Node.js). The application allows users to browse products, register, log in securely using JWT authentication, manage shopping carts, place orders, and maintain wishlists. An admin dashboard is also provided to manage products, users, and customer orders.
+## 🌐 Live Demo
 
----
+- **Frontend:** https://shop-sphere-hazel.vercel.app/
+- **Backend:** https://shopsphere-l2ul.onrender.com
+- **GitHub Repository:** https://github.com/charishmasasanapuri-droid/ShopSphere
 
-## Features
+## 📌 Project Overview
 
-- User Registration and Login
-- JWT Authentication
-- Product Listing and Search
-- Product Details Page
-- Shopping Cart
-- Wishlist Management
-- Order Placement
-- Admin Dashboard
-- Product Image Upload
-- Responsive User Interface
+ShopSphere is an online shopping platform that allows users to browse products, create accounts, securely log in, manage shopping carts, maintain wishlists, and place orders.
 
----
+The application also includes an admin dashboard for managing products, users, and customer orders.
 
-## Technologies Used
+## ✨ Features
 
-### Frontend
-- React.js
-- React Router
-- Redux Toolkit
-- Axios
-- CSS
+### User Features
+- User registration and login
+- JWT-based authentication
+- Browse available products
+- Search and filter products
+- Product sorting
+- Add and remove products from cart
+- Add and remove wishlist items
+- Buy Now functionality
+- Checkout and order placement
+- View order history
+- Product reviews and ratings
+- Download order invoices
+- Share products
 
-### Backend
-- Node.js
-- Express.js
-- JWT Authentication
-- Multer
+### Admin Features
+- Admin login
+- Admin dashboard
+- Add, update, and delete products
+- Manage users
+- Manage customer orders
+- Inventory and stock management
 
-### Database
-- MongoDB Atlas
-- Mongoose
+### Additional Features
+- Responsive user interface
+- Product image uploads
+- Demo payment functionality
+- Automatic stock deduction after orders
 
----
+## 🛠️ Technologies Used
 
-## Project Structure
+| Frontend | Backend | Database |
+|---|---|---|
+| React.js | Node.js | MongoDB |
+| Vite | Express.js | MongoDB Atlas |
+| CSS | JWT | Mongoose |
+| Axios | Multer | |
 
-```
+**Tools and Platforms**
+- Visual Studio Code
+- Git and GitHub
+- Vercel – Frontend deployment
+- Render – Backend deployment
+- MongoDB Atlas – Cloud database
+
+## 📂 Project Structure
+
+```text
 ShopSphere/
 │
 ├── client/
 │   ├── public/
 │   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   └── ...
 │   └── package.json
 │
 ├── server/
 │   ├── config/
 │   ├── controllers/
-│   ├── middleware/
 │   ├── models/
 │   ├── routes/
+│   ├── uploads/
+│   ├── middleware/
 │   ├── server.js
 │   └── package.json
 │
 └── README.md
 ```
 
----
+## ⚙️ Installation and Setup
 
-## Installation
-
-### Clone Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/charishmasasanapuri-droid/ShopSphere.git
+cd ShopSphere
 ```
 
-### Install Frontend
-
-```bash
-cd client
-npm install
-```
-
-### Install Backend
-
-```bash
-cd ../server
-npm install
-```
-
----
-
-## Environment Variables
-
-Create a `.env` file inside the `server` folder.
-
-```env
-PORT=
-MONGO_URI=
-JWT_SECRET=
-```
-
----
-
-## Run the Project
-
-### Backend
+### 2. Setup the backend
 
 ```bash
 cd server
-npm start
+npm install
 ```
 
-### Frontend
+Create a `.env` file inside the server folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_jwt_secret
+```
+
+Start the backend:
 
 ```bash
-cd client
 npm run dev
 ```
 
----
+### 3. Setup the frontend
 
-## Future Enhancements
+Open another terminal:
 
-- Online Payment Integration
-- Product Reviews
-- AI Product Recommendation
-- Multi Vendor Support
-- Mobile Application
-- Chat Support
+```bash
+cd client
+npm install
+npm run dev
+```
 
----
+Open the local frontend URL displayed in your terminal.
 
-## Author
+## 🔐 Environment Variables
+
+| Variable | Description |
+|---|---|
+| PORT | Backend server port |
+| MONGO_URI | MongoDB connection string |
+| JWT_SECRET | Secret key used for JWT authentication |
+
+**Security:** Never upload `.env` files, database passwords, or JWT secrets to GitHub.
+
+## 🚀 Deployment
+
+- Frontend hosted on Vercel.
+- Backend hosted on Render.
+- Database hosted on MongoDB Atlas.
+
+## 🎯 Project Objective
+
+The main objective of ShopSphere is to develop a user-friendly and responsive online shopping platform that provides essential e-commerce functionality, secure authentication, product management, and order processing.
+
+## 👩‍💻 Author
 
 **Charishma Sasanapuri**
 
-Student Internship Project
+GitHub: https://github.com/charishmasasanapuri-droid
+
+## 📄 License
+
+This project was developed for educational and learning purposes.
