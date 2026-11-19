@@ -156,32 +156,6 @@ The main objective of ShopSphere is to develop a user-friendly and responsive on
 
 ---
 
-## 📸 Project Screenshots
-
-### 1. Home Page
-![Home Page](01-home-page.png)
-
-### 2. Products Listing
-![Products Listing](02-products-listing.png)
-
-### 3. Product Details
-![Product Details](03-product-details.png)
-
-### 4. Wishlist
-![Wishlist](04-wishlist.png)
-
-### 5. Shopping Cart
-![Shopping Cart](05-shopping-cart.png)
-
-### 6. Checkout
-![Checkout](06-checkout.png)
-
-### 7. Admin Dashboard
-![Admin Dashboard](07-admin-dashboard.png)
-
-### 8. Order Management
-![Order Management](08-order-management.png)
-
 GitHub: https://github.com/charishmasasanapuri-droid
 
 ## 📄 License
